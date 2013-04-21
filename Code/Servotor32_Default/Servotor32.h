@@ -17,12 +17,13 @@
 #define GROUPS 4
 #define SERVOS_PER_GROUP 8
 
+#define ARCPING_STEPS 90
 
 class Servotor32 {
 public:
   Servotor32();
   void begin();
-  
+  void arcPing();
   long unsigned int micros_new();
 
   long unsigned int millis_new();
